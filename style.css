@@ -1,0 +1,520 @@
+*{
+    margin: 0px;
+    background-color: #0e1528;
+    color: #8892b0;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",system-ui,sans-serif;;
+    font-size: 20px;
+    line-height: 1.3;
+}
+body {
+    height: 100%;
+}
+header{
+    box-sizing:inherit;
+    position: fixed;
+    z-index: 10;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 95%;
+}   
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .logo img{
+    width: 100px;
+    height: 80px;
+    margin-top: 17px;
+}
+header nav .navbar{
+    display: flex;
+}
+.navbar .navigation ol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.navbar .navigation ol li a{
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: #64ffda;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar .navigation ol li a:hover{
+    text-decoration: underline;
+    color: #a8b2d1;
+}
+header nav .navbar .resume a{
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 0.60rem 1rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+   margin-left: 15px;
+    font-size: 13px;
+}
+header nav .navbar .resume a:hover{
+    background-color: #4f6981;
+    border: 2px solid #64ffda;
+}
+.sideleft{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: #ccd6f6;
+    box-sizing:inherit;
+}
+.sideright{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 94%;
+    right: auto;
+    z-index: 10;
+    color: #ccd6f6;
+    box-sizing:inherit;
+}
+.sideleft ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+}
+.sideleft ul a{
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    
+}
+.sideleft ul a i:hover{
+color: aqua;
+}
+
+.sociallist::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #a8b2d1;
+}
+.sideright .email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.sideright .email a{
+    margin: 20px auto;
+    padding: 10px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+}
+.sideright .email a:hover{
+    color: aqua;
+    }
+    
+.email::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #a8b2d1;
+}
+.content{
+    padding: 0px 150px;
+}
+section{
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+}
+.content .intro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 85vh;
+    padding: 0px;
+    
+}
+.intro .intro-content{
+    margin-top: 10%;
+}
+.presentation h1{
+    margin: 0px 0px 30px 4px;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: clamp(13px,5vw,16px);
+    font-weight: 400;
+}
+.presentation h2{
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+.presentation h3{
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+    margin-top: 10px;
+    color: #8892b0;
+    line-height: 0.9;
+
+}
+.intro-position p{
+    margin: 20px 0px 50px;
+    max-width: 540px;
+    color: #4f6981;
+    font-size: 17px;
+}
+.intro-position a{
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    margin-top: 50px;
+}
+.intro-position a:hover{
+    background-color: #4f6981;
+    border: 2px solid #64ffda;
+}
+.title h2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    font-size: clamp(26px,5vw,32px);
+    font-weight: 600;
+    color: #ccd6f6;
+    line-height: 1.1;
+}
+.title h2::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 500px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #233554;
+
+}
+.desc .aboutdesc p{
+    margin: 0px 0px 15px;
+}
+.aboutskills ul{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+.aboutskills ul li{
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 13px;
+}
+.aboutskills ul li::after{
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #64ffda;
+    font-size: 14px;
+    line-height: 12px;
+}
+.container{
+    display: flex;
+}
+.container .img{
+    margin-right: 60px;
+    padding: 1px 140px;
+    
+}
+.container .img img{
+    width: 301%;
+    height: 96%;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    filter: grayscale(100%) contrast(1);
+    transition: transform 1s .2s;
+}
+.container .img img:hover{
+    filter: none;
+    transform: translate(21px, 19px);
+
+}
+
+.container .img .cadre{
+    content: "";
+    width: 290%;
+    height: 95%;
+    position: absolute;
+    border: 2px solid #64ffda;
+    top: 116%;
+    right: 14%;
+    width: 18%;
+    height: 47%;
+    
+}
+.projects .row{
+    display: flex;
+    padding-bottom: 20%;
+}
+.projects .row .projectimage{
+    z-index: 1;
+    position: absolute;
+    left : 40%;
+
+}
+.projects .row .projectimage img{
+    width: 100%;
+    filter: grayscale(100%) contrast(1);
+    transition: filter 1s .3s;
+    
+}
+.projects .row .projectimage img:hover{
+    filter: none;
+
+}
+.projects .row .projectdetail .title h3{
+    margin: 20px 0px;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+.projects .row .projectdetail .detail{
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #112240;
+    height: 40%;
+    width: 80%;
+}
+.projects .row .projectdetail .detail p{
+    background: transparent;
+    color: rgb(151, 187, 183);
+    font-size: 20px;
+}
+.projects .row .projectdetail .src a{
+    padding: 10px;
+    text-decoration: none;
+}
+.projects .row .projectdetail .src a i:hover{
+    color: aqua;
+}
+.projects .row .projecttech ul{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0px, 83px));
+    gap: 0px 10px;
+    margin: 25px 0px 10px;
+    padding: 0px;
+    list-style: none;
+
+}
+.projects .row .projecttech ul li{
+    margin: 0px 0px 5px 20px;
+    color: #a8b2d1;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+    font-size: 15px;
+    position: relative;
+}
+.projects .row .projecttech ul li::after{
+    content: "▹";
+    position: absolute;
+    right: 65px;
+    color: #64ffda;
+    font-size: 14px;
+    line-height: 17px;
+}
+.technodetail ul{
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+}
+.technodetail .technoinner{
+    box-shadow: 0 10px 30px -15px #446381;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    border-radius: 4px;
+
+}
+.technodetail .technoinner .tachnotop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    background: transparent;
+}
+
+.technodetail .technoinner .tachnotop .folder i{
+    color: aqua;
+    font-size: 50px;
+}
+.technodetail .technoinner .tachnotop .technolink{
+    display: flex;
+    align-items: center;
+    margin-right: -10px;
+    color: #a8b2d1;
+}
+.technodetail .technoinner .tachnotop .technolink a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 7px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+.technodetail .technoinner .tachnotop .technolink i:hover{
+    color: aqua;
+    font-size: 25px;
+}
+.technodetail .technoinner .technotitle{
+    margin: 0px 0px 10px;
+    color: #ccd6f6;
+    font-size: 22px;
+}
+.technodetail .technoinner .technodesc{
+    color: #a8b2d1;
+    font-size: 17px;
+}
+.technodetail .technoinner button{
+    color: #64ffda;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 0.60rem 1rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    margin-left: 70px;
+    font-size: 13px;
+    margin-top: 45px;
+}
+.technodetail .technoinner button:hover{
+        background-color: #4f6981;
+        border: 2px solid #64ffda;
+}
+#more {display: none;}
+
+.form_inner .form_title h3{
+    margin: 20px 0px;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact-form {
+    box-shadow: 0 10px 30px 15px rgb(2 12 27 / 70%);
+    padding: 25px;
+    border-radius: 4px;
+    height: 40%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#contact form .info {
+    display: flex;
+    justify-content:space-between;
+}
+#contact input,
+#contact textarea {
+	width: 100%;
+	color: #4f6981;
+	margin-bottom: 25px;
+	border: none;
+	border-bottom: 1px solid rgb(136 146 176);
+    
+}
+
+#contact input:focus ,#contact textarea:focus {
+	color: #8892b0;
+}
+#contact button.submitform {
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 0.60rem 1rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 17px;
+    width: 18%;
+    margin-left: 40%;
+
+}
+#contact button.submitform:hover,  #contact button.submitform:focus {
+    background-color: #4f6981;
+    border: 2px solid #64ffda;
+}
+#message-warning, #message-success {
+    display: none;
+	margin-bottom: 1.6rem;
+	width: 100%;
+}
+#message-warning {
+	color: #fa0003;
+}
+#message-success {
+	color: #64ffc4;
+}
+#message-warning i, #message-success i {
+	margin-right: 10px;
+}
+#submit-loader {
+	display: none;
+	position: relative;
+	left: 0;
+	top: 0.8rem;
+	width: 100%;
+	text-align: center;
+}
+#submit-loader .text-loader {
+	display: none;
+	color: #95e0d0;
+	letter-spacing: .3rem;
+	text-transform: uppercase;
+}
