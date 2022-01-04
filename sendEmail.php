@@ -3,7 +3,7 @@
 $siteOwnersEmail = 'dounyaa.alaoui@gmail.com';
 
 
-if($_POST) {
+if(isset($_POST['submit'])) {
 
    $name = $_POST['contactName'];
    $email = $_POST['contactEmail'];

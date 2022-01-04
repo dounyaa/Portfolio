@@ -262,8 +262,8 @@ section{
     
 }
 .container .img img{
-    width: 301%;
-    height: 96%;
+    width: 197%;
+    height: 76%;
     border-radius: 5px;
     position: relative;
     display: block;
@@ -282,10 +282,10 @@ section{
     height: 95%;
     position: absolute;
     border: 2px solid #64ffda;
-    top: 116%;
-    right: 14%;
-    width: 18%;
-    height: 47%;
+    top: 117%;
+    right: 16%;
+    width: 19.5%;
+    height: 51%;
     
 }
 .projects .row{
@@ -295,7 +295,7 @@ section{
 .projects .row .projectimage{
     z-index: 1;
     position: absolute;
-    left : 40%;
+    left : 39%;
 
 }
 .projects .row .projectimage img{
@@ -323,12 +323,16 @@ section{
     border-radius: 4px;
     background-color: #112240;
     height: 40%;
-    width: 80%;
+    width: 55%;
 }
 .projects .row .projectdetail .detail p{
     background: transparent;
     color: rgb(151, 187, 183);
     font-size: 20px;
+}
+.projects .row .projectdetail .detail p a{
+    background: transparent;
+    color: #64ffc3;
 }
 .projects .row .projectdetail .src a{
     padding: 10px;
