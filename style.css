@@ -25,7 +25,7 @@ header nav{
 header nav .logo img{
     width: 100px;
     height: 80px;
-    margin-top: 17px;
+    /* margin-top: 17px; */
 }
 header nav .navbar{
     display: flex;
@@ -226,6 +226,102 @@ section{
     background-color: #233554;
 
 }
+.stage_btn{
+    text-align: center;
+    background: transparent;
+    margin: 30px;
+    
+}
+.stage_btn a:hover{
+    background-color: #4f6981;
+    border: 2px solid #64ffda;
+}
+.stage_btn a{
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 0.60rem 1rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 10px;
+}
+.stage_button{
+    text-align: center;
+    background: transparent;
+    margin: 20px;
+    
+}
+.stage_button a:hover{
+    background-color: #4f6981;
+    border: 2px solid #64ffda;
+}
+.stage_button a{
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 0.60rem 1rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 10px;
+}
+.stage_logo{
+    background: transparent;
+    text-align: center;
+}
+.stage_logo img{
+    background: transparent;
+    margin: 20px;
+}
+.stage_title{
+    background: transparent;
+    text-align: center;
+    margin: 15px;
+}
+.subtitle h3{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 1.1;
+    margin: 20px 45px 20px;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+.subtitle h3::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 350px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #233554;
+
+}
+.stage_title h2{
+    background: transparent;
+    color: #a8b2d1;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+.stage_title span{
+    background: transparent;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 15px;
+
+}
+.stage_title a{
+    background: transparent;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    text-decoration: none;
+}
 .desc .aboutdesc p{
     margin: 0px 0px 15px;
 }
@@ -257,13 +353,12 @@ section{
     display: flex;
 }
 .container .img{
-    margin-right: 60px;
-    padding: 1px 140px;
+    margin: 10px 30px;
     
 }
 .container .img img{
-    width: 197%;
-    height: 76%;
+    width: 20vw;
+    height: 50vh;
     border-radius: 5px;
     position: relative;
     display: block;
@@ -278,14 +373,11 @@ section{
 
 .container .img .cadre{
     content: "";
-    width: 290%;
-    height: 95%;
+    width: 21vw;
+    height: 52vh;
     position: absolute;
     border: 2px solid #64ffda;
-    top: 117%;
-    right: 16%;
-    width: 19.5%;
-    height: 51%;
+    border-radius: 5px;
     
 }
 .projects .row{
@@ -324,11 +416,36 @@ section{
     background-color: #112240;
     height: 40%;
     width: 55%;
+
+}
+.stagecontainer{
+    background: transparent;
+}
+.stagedesc{
+    background: transparent;
+    text-align: justify;
+}
+.stagedesc p{
+    background: transparent;
+
+}
+
+.stagedetail{
+    margin: auto;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #112240;
+    height: 40%;
+    width: 55%;
 }
 .projects .row .projectdetail .detail p{
     background: transparent;
     color: rgb(151, 187, 183);
     font-size: 20px;
+    
 }
 .projects .row .projectdetail .detail p a{
     background: transparent;
@@ -348,6 +465,7 @@ section{
     margin: 25px 0px 10px;
     padding: 0px;
     list-style: none;
+    background: transparent;
 
 }
 .projects .row .projecttech ul li{
@@ -356,29 +474,120 @@ section{
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
     font-size: 15px;
     position: relative;
+    background: transparent;
+
 }
 .projects .row .projecttech ul li::after{
     content: "▹";
     position: absolute;
-    right: 65px;
+    right: 70px;
+    color: #64ffda;
+    font-size: 14px;
+    line-height: 12px;
+}
+.stagetech {
+    background: transparent;
+}
+.stagetech p{
+    margin-top: 15px;
+    background: transparent;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: #6f9e93;
+    font-size: 15px;
+    text-decoration: none;
+}
+.stagetech ul{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0px, 127px));
+    gap: 0px 10px;
+    margin: 15px 0px;
+    padding: 0px;
+    list-style: none;
+    background: transparent;
+
+}
+.stagetech ul li{
+    margin: 0px 0px 5px 20px;
+    color: #a8b2d1;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+    font-size: 15px;
+    position: relative;
+    background: transparent;
+
+}
+.stagetech ul li::after{
+    content: "▹";
+    position: absolute;
+    right: 120px;
     color: #64ffda;
     font-size: 14px;
     line-height: 17px;
 }
+
+.projettech {
+    background: transparent;
+}
+.projettech p{
+    margin-top: 15px;
+    background: transparent;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: #6f9e93;
+    font-size: 15px;
+    text-decoration: none;
+}
+.projettech ul{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0px, 250px));
+    gap: 0px 10px;
+    margin: 15px 0px;
+    padding: 0px;
+    list-style: none;
+    background: transparent;
+
+}
+.projettech ul li{
+    margin: 0px 0px 5px 20px;
+    color: #a8b2d1;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+    font-size: 15px;
+    position: relative;
+    background: transparent;
+
+}
+.projettech ul li::after{
+    content: "▹";
+    position: absolute;
+    right: 240px;
+    color: #64ffda;
+    font-size: 14px;
+    line-height: 17px;
+}
+.technoUrl {
+    text-align: center;
+    margin: 35px;
+}
+.technoUrl a{
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 0.60rem 1rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 13px;
+
+}
 .technodetail ul{
     list-style: none;
-    padding: 0px;
-    margin: 50px 0px 0px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
-    position: relative;
 }
 .technodetail .technoinner{
     box-shadow: 0 10px 30px -15px #446381;
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
     height: 100%;
     padding: 2rem 1.75rem;
     border-radius: 4px;
@@ -407,7 +616,6 @@ section{
     justify-content: center;
     align-items: center;
     padding: 5px 7px;
-    position: relative;
     z-index: 1;
     text-decoration: none;
 }
@@ -426,7 +634,6 @@ section{
 }
 .technodetail .technoinner button{
     color: #64ffda;
-    position: absolute;
     background-color: transparent;
     border: 1px solid #64ffda;
     border-radius: 4px;
@@ -434,9 +641,8 @@ section{
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     line-height: 1;
     text-decoration: none;
-    margin-left: 70px;
     font-size: 13px;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 .technodetail .technoinner button:hover{
         background-color: #4f6981;
