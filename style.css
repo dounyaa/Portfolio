@@ -251,7 +251,7 @@ section{
 .stage_button{
     text-align: center;
     background: transparent;
-    margin: 20px;
+    margin-bottom: 20px;
     
 }
 .stage_button a:hover{
